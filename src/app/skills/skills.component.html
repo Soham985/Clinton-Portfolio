@@ -1,0 +1,57 @@
+<div class="skills-container">
+        <h3><span style="color:orangered">My</span> Skills</h3>
+        <hr>
+        <div class="tabs d-flex justify-content-center">
+            <mat-tab-group fitInkBarToContent [color]="'warn'" [disableRipple]="true" mat-stretch-tabs="false" mat-align-tabs="center" class="tab-container">
+                <mat-tab label="Designing">
+                    <p>Crafting visual masterpieces that captivate the eye, I bring imagination to life as a skilled graphics designer. From concept to creation, I transform ideas into stunning designs that leave a lasting impression.</p>
+                    <div class="row skills">
+                        <div class="wrapper col-md-5" *ngFor="let skill of designSkills,let i = index">
+                            <h5 class="skill-name">{{skill.name}}</h5>
+                            <div class="scoring">
+                                <div class="stars" *ngFor="let score of designSkills[i].score,let j=index" >
+                                    <i class="bi bi-star-fill animated-icon"></i>
+                                </div>
+                                <div class="stars" *ngFor="let score of designSkills[i].rem" >
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Trading">
+                    <p>With a keen eye for market trends and a knack for seizing opportunities, I navigate the complex world of trading, turning risks into profitable ventures. Mastering the art of financial analysis and strategic decision-making, I excel in the dynamic realm of trading, consistently delivering impressive returns on investments.</p>
+                    <div class="row skills">
+                        <div class="wrapper col-md-5" *ngFor="let skill of tradingSkills,let i = index">
+                            <h5 class="skill-name">{{skill.name}}</h5>
+                            <div class="scoring">
+                                <div class="stars" *ngFor="let score of tradingSkills[i].score">
+                                    <i class="bi bi-star-fill animated-icon"></i>
+                                </div>
+                                <div class="stars" *ngFor="let score of tradingSkills[i].rem">
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Coding">
+                    <p>Coding is my art, where lines of logic dance and algorithms come alive, painting a world of innovation and possibilities.As a coding virtuoso, I orchestrate symphonies of logic, transforming complex problems into elegant solutions that redefine what's possible.With a knack for problem-solving, I navigate the digital labyrinth, conquering challenges one line of code at a time.</p>
+                    <div class="row skills">
+                        <div class="wrapper col-md-5" *ngFor="let skill of codingSkills,let i = index">
+                            <h5 class="skill-name">{{skill.name}}</h5>
+                            <div class="scoring">
+                                <div class="stars" *ngFor="let score of codingSkills[i].score">
+                                    <i class="bi bi-star-fill animated-icon"></i>
+                                </div>
+                                <div class="stars" *ngFor="let score of codingSkills[i].rem">
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+        
+</div>

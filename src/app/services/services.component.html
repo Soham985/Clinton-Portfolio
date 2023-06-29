@@ -1,0 +1,20 @@
+<div class="service">
+    
+    <h3><span style="color:orangered">My</span> Services</h3>
+    <hr>
+    <div class="row ">
+        <div class="col-12 col-sm-4 col-lg-4 flip-card" *ngFor="let service of services">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="icon-container">
+                        <i class="{{service.icon}}"></i>
+                    </div>
+                    <h6>{{service.name}}</h6>
+                </div>
+                <div class="flip-card-back">
+                  <p>{{service.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

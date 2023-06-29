@@ -1,0 +1,40 @@
+<nav class="navbar">
+    <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" >
+              <div routerLink="/" [class.selected]="headerSelected=='Bio'" (click)="selected('Bio')">
+                <i class="bi bi-person-fill"></i>
+                <a class="nav-link active" >BIO</a>
+              </div>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <div  routerLink="/skills" [class.selected]="headerSelected=='Skills'" (click)="selected('Skills')">
+                <i class="bi bi-code-square"></i>
+                <a class="nav-link active">SKILLS</a>
+              </div>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <div routerLink="/work" [class.selected]="headerSelected=='Work'" (click)="selected('Work')">
+                <i class="bi bi-pc-display-horizontal"></i>
+                <a class="nav-link active" >WORK</a>
+              </div>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <div  routerLink="/service" [class.selected]="headerSelected=='Partners'" (click)="selected('Partners')">
+                <i class="bi bi-box-fill"></i>
+                <a class="nav-link active">SERVICES</a>
+              </div>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <div  routerLink="/contact" [class.selected]="headerSelected=='Contact'" (click)="selected('Contact')">
+                <i class="bi bi-person-rolodex"></i>
+                <a class="nav-link active">CONTACT</a>
+              </div>
+            </li>
+        </ul>
+    </div>
+</nav>

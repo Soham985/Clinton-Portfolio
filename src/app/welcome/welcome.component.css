@@ -1,0 +1,77 @@
+.container-fluid{
+    width: 40vw;
+    height: 50vh;
+    
+}
+.row{
+    height: 85%;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-holder{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+
+.content-wrapper{
+    position: relative;
+    height: 100%;
+}
+
+p{
+    font-size: 2vh;
+    position: absolute;
+    top: -100%;
+    animation: appearFromTop 1s forwards;
+}
+
+@keyframes appearFromTop {
+    0% {
+      top: -100%; /* Start position */
+    }
+    100% {
+      top: 25%; /* End position at its original position */
+    }
+  }
+
+
+.btn{
+    position: absolute;
+    background-color: orangered;
+    color: white;
+    animation: appearFromBottom 1s forwards;
+    
+}
+
+@keyframes appearFromBottom {
+    0% {
+        top: 100%; /* Start position */
+    }
+    100% {
+        top: 60%; /* End position at its original position */
+    }
+  }
+
+@media (min-width:1000px) and (max-width:1300px) {
+    .h6{
+        font-size: 0.8rem;
+    }
+}
+

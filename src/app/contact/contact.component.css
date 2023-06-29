@@ -1,0 +1,113 @@
+.contact{
+    padding: 2vw;
+    height: 100%;
+    width: auto
+}
+
+.para-content{
+    
+    font-size: 1rem;
+}
+
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+.card-text{
+    font-size: 0.8rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.contact-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon-container{
+    display:flex
+}
+
+.contact-info{
+    background-color: wheat;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.form-container{
+    background-color: white;
+    border-radius: 1%;
+}
+
+input,textarea{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid orange;
+    margin-top: 15px;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid orange;
+}
+
+button{
+    background-color: orange;
+    color: white;
+}
+
+button:hover{
+    background-color: orange;
+    color: white;
+}
+
+@media (min-width: 1200px) and (max-width: 1300px){
+
+    .contact{
+        padding: 1vw;
+    }
+    
+    .para-content{
+        
+        font-size: 0.8rem;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+
+    h5{
+        font-size: 0.9rem;
+    }
+    
+    .card-text{
+        font-size: 0.7rem;
+    }
+
+    input,textarea{
+        font-size: 0.8rem;
+    }
+
+    button{
+        font-size: 0.8rem;
+    }
+
+    .contact-info{
+        padding: 0.3rem;
+    }
+
+    .form-container{
+        margin-top: 0px;
+    }
+    
+}

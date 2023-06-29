@@ -1,0 +1,87 @@
+.work{
+    padding: 2vw;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container{
+    border-left: 3px solid orange;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: -1.7rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background:orange;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge{
+    background: orange;
+    padding: 0.7rem;
+}
+
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: grey;
+    font-size: 1rem;
+}
+
+h3,h5{
+    color:#383838;
+    font-size: 1.5rem;
+}
+
+@media (min-width:1200px) and (max-width:1300px) {
+    p{
+        font-size: 0.8rem;
+    }
+
+    h6{
+        font-size: 0.9rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width:520px) {
+    .header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
+    h6{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+    .card::before{
+        content: '';
+        position: absolute;
+        top: -0.5rem;
+        left: -1.4rem;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background:orange;
+    }
+
+}

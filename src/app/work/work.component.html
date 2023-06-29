@@ -1,0 +1,22 @@
+<div class="work">
+    <div class="container-top"></div>
+    <div class="inner">
+        <h3><span style="color:orangered">Work</span> Experience</h3>
+        <hr>
+        <div class="row my-4">
+            <div class="col-12 ms-lg-3 my-2 card-container" *ngFor="let exp of experiences">
+                <div class="card">
+                    <div class="card-body shadow">
+                        <div class="header">
+                            <h5><strong>{{exp.name}}</strong></h5>
+                            <h6><span class="badge rounded-pill">{{exp.startYear}} - {{exp.endYear}}</span></h6>
+                        </div>
+                        <h6 ><strong>{{exp.company}}</strong></h6>
+                        <p class="card-text">{{exp.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-bottom"></div>
+</div>
